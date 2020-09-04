@@ -31,21 +31,7 @@
     }
 }
 
-function phhp() {
-           var url = $('url').value;
-            //this is the URL for the server
-                is_url(url);
-            var n = url.includes("https://");
-            var y = url.includes("http://");
-            var youtube = url.includes("youtube");
-            if (youtube) {var gui = "https://" + domainPHP  + "/geographic/index.php?q=" + tabUS;} 
-            else if (n || y) {
-            var gui = "https://" + domainPHP  + "/geographic/index.php?q=" + url;}
-            else {var gui = "https://" + domainPHP  + "/geographic/index.php?q=" + "http://" + url;}
-            document.write('<iframe allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true" id="proxyframe" src="'+gui+'"  style="position:fixed; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:9;"seamless>');
-            return false;
-            };
-   
+
           
          var url = window.location.hostname;
             //Node button
