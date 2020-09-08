@@ -9,9 +9,8 @@
             else {return false;}
          }
       
-               var domainND = "productionapps.herokuapp.com";
             var domainPY = "pythonstuffs.herokuapp.com";
-            var domainPM = "anotherarchproject.herokuapp.com";
+         
             var domainPHP = "boomermathphp.000webhostapp.com";
             var domainCNN = "thecnnpower.tk";
             var domainAL = "nodejsnewpro.herokuapp.com"
@@ -33,23 +32,7 @@
 }
 
 
-          
-         var url = window.location.hostname;
-            //Node button
-          document.getElementById('nd').onclick = function nd() {
-            var url = $('url').value;
-            //this is the URL for the server
-                is_url(url);
-            var n = url.includes("https://")
-            var y = url.includes("http://")
-            if (n || y) {
-            var asdf = "https://" + domainND  + "/>/" + url;}
-            else {var asdf = "https://" + domainND  + "/>/" + "http://" + url;}
-            window.open(asdf);
-            
-            return false;
-            };
-     
+    var url = window.location.hostname
 
             //Pygo button
           document.getElementById('pygo').onclick = function pygo() {
@@ -106,23 +89,7 @@
             return false;
             };
         
-     
-     var url = window.location.hostname;
-            //PM button
-          document.getElementById('pm').onclick = function pm() {
-            var url = $('url').value;
-            //this is the URL for the server
-                is_url(url);
-            var n = url.includes("https://")
-            var y = url.includes("http://")
-            if (n || y) {
-            var jui = "https://" + domainPM  + "/" + url;}
-            else {var jui = "https://" + domainPM  + "/" + "http://" + url;}
-            document.write('<iframe allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true" id="forumframe" src="'+jui+'"  style="position:fixed; top: 0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:9;"</iframe>');
-         
-            return false;
-            };
-     
+ 
 
 var url = window.location.hostname;
             //AL button
