@@ -14,7 +14,7 @@
             var domainPM = "anotherarchproject.herokuapp.com";
             var domainPHP = "boomermathphp.000webhostapp.com";
             var domainCNN = "thecnnpower.tk";
-            var domainAL = "nodejsprods.herokuapp.com"
+            var domainAL = "nodejsnewpro.herokuapp.com"
             var tabUS = "https://invidiou.site/feed/trending";
             
          
