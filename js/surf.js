@@ -14,6 +14,7 @@
             var domainPM = "anotherarchproject.herokuapp.com";
             var domainPHP = "boomermathphp.000webhostapp.com";
             var domainCNN = "thecnnpower.tk";
+            var domainAL = "nodejsprod.herokuapp.com"
             var tabUS = "https://invidiou.site/feed/trending";
             
          
@@ -122,7 +123,32 @@
             return false;
             };
      
-    
+
+var url = window.location.hostname;
+            //AL button
+          document.getElementById('al').onclick = function al() {
+            var url = $('url').value;
+            //this is the URL for the server
+                is_url(url);
+             var n = url.includes("https://")
+            var y = url.includes("http://")
+            if (n) {
+            url.replace("https://","");
+            var finalUrl = window.btoa(url);
+            var jjui = "https://" + domainAL + "/fetch/" + finalUrl}
+           else if (y) {
+            url.replace("http://","");
+            var finalUrl = window.btoa(url);
+            var jjui = "https://" + domainAL + "/fetch/" + finalUrl}
+            else {
+                     var finalUrl = window.btoa(url);
+                      var jjui = "https://" + domainAL  + "/fetch/" + finalUrl;}
+            document.write('<iframe allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true" id="forumframe" src="'+jjui+'"  style="position:fixed; top: 0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:9;"</iframe>');
+         
+            return false;
+            };
+
+
           window.onload = function() {
             $('url').focus();
           }
