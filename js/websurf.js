@@ -110,7 +110,7 @@ document.getElementById('al').onclick = function al() {
     is_url(url);
     var n = url.includes("https://")
     var y = url.includes("http://")
-    var rand = Math.floor(Math.random() * 1) + 1)
+    var rand = Math.floor(Math.random() * 1) + 1;
     if (rand === 1) {domainAL = domainAL1}
     else if (rand === 2) {domainAL = domainAL2}
     else {domainAL = domainAL1}
