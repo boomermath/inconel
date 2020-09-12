@@ -17,7 +17,7 @@ var domainPHP = "boomermathphp.000webhostapp.com";
 var domainCNN = "thecnnpower.tk";
 var domainAL1 = "nodejsnewpro.herokuapp.com";
 var domainAL2 = "nocie.herokuapp.com";
-var tabUS = "https://invidiou.site/feed/trending";
+var tabUS = "https://invidious.xyz";
 
 
 //Check if its a valid url, if not, forward it as a search query to google.
@@ -138,7 +138,7 @@ window.onload = function() {
 
 //these are the shortcut buttons
 function invidiokey() {
-    document.getElementById("url").value = "invidiou.site";
+    document.getElementById("url").value = "invidious.xyz";
 }
 
 function googlekey() {
