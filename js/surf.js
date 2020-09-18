@@ -16,7 +16,7 @@ var domainPY = "pythonstuffs.herokuapp.com";
 var domainPHP = "boomermathphp.000webhostapp.com";
 var domainCNN = "thecnnpower.tk";
 var domainAL1 = "nodejsnewpro.herokuapp.com";
-var domainAL2 = "nocie.herokuapp.com";
+var domainAL2 = "nodejsnewpro.herokuapp.com";
 var tabUS = "https://invidious.xyz";
 
 
