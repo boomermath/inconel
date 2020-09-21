@@ -1,299 +1,180 @@
-body:before {
- content: "";
- position: fixed;
- left: 0; right: 0;
- top: 0; bottom: 0;
- background: linear-gradient(45deg, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.56) 90%);
- /*filter: blur(8px);*/
- z-index: -1;
+h1 {
+  color: white;
 }
-
-/* USE THIS TO CHANGE COLOR SCHEME*/
-:root {
-    --main-color:Orange;
-    --secondary-color:PaleGreen;
-    --hovercolor:MediumSeaGreen;
-    --textcolor:White;
-    --borders:White;
-    --hoverbuttoncolor:DarkOrange;
-    --transbutborder:LightGray;
-  }
-
-.linky:hover {color:Orange;}
-
-body{
-  font-family: 'Noto Sans JP', sans-serif;
-  text-align: center;
-  padding: 0;
-  text-decoration: none;
-  margin:0;
-  background-color: white;
-  color:var(--textcolor);
-  background-image:url('orange.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-body a {text-decoration: none;}
 
 body {
-  margin: 0;
-  font-family: 'Noto Sans JP', sans-serif;;
-}
-
-.navbar {
-  overflow: hidden;
-  background-color: var(--secondary-color);
-  position:fixed;
-  z-index:10;
-  width:100%;
-}
-
-.navbar a {
-  float: right;
-  display: table;
-  color: var(--textcolor);
-  text-align: center;
-  padding: 12px 12px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.navbar a:hover {
-  background-color: var(--hovercolor);
-  color: var(--textcolor);
-}
-
-
-
-.navbar .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .navbar a {display: none;}
-  .navbar a.icon {
-    z-index:11;
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .navbar.responsive {position: fixed; z-index:10;}
-  .navbar.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .navbar.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-.container{
+  position: absolute;
+  font-family: "Raleway", sans-serif;
+  height: auto;
+  min-height: 100%;
+  margin: 0px;
+  padding: 0px;
   width: 100%;
-  margin: auto;
-  overflow: hidden;
-  justify-content: center;
-
+  min-width: 100%;
+  color: white;
+  z-index: 0;
+  transition: 0.3s;
 }
 
-.containerb{
-  width: 75%;
-  margin: auto;
-  overflow: hidden;
-  justify-content: center;
+.homesplash {
+  animation: fadeInAnimation ease 2.3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
-.containerc{
-  width: 99%;
-  margin: auto;
-  overflow: hidden;
-  justify-content: center;
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-
-.centerh {
-
-        position: absolute;
-        top:25%;
-
-}
-
-
-.button {
-  /*background-color: var(--main-color);*/
-  background-color: Transparent;
+.ytiframe {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
   border: none;
-  color: var(--textcolor);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 8;
+  transition: ease-in linear 1s;
+}
+
+.centerleft {
+  position: relative;
+  color: white;
+  vertical-align: middle;
+  line-height: 100%;
+  margin-left: 100px;
+  align-items: center;
+  margin-top: 20%;
+  font-size: 48px;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: #fff; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.2s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(51, 51, 51);
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #000000;
+  transition: 0.1s;
+  font-size: 30px;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+@viewport {
+  width: device-width;
+  zoom: 1;
+}
+
+.forum {
+  color: white;
+  background-color: transparent;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  margin: 5px 3px;
   padding: 16px 33px;
+  position: relative;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 12px;
-  margin: 3px 1px;
   cursor: pointer;
-  border-top: 1px solid var(--borders);
-  border-bottom: 1px solid var(--borders);
-  border-right: 1px solid var(--borders);
-  border-left: 1px solid var(--borders);
 }
 
-.button:hover {
- background-color: Transparent;
- color: var(--transbutborder);
- border-top: 1px solid var(--transbutborder);
- border-bottom: 1px solid var(--transbutborder);
- border-right: 1px solid var(--transbutborder);
- border-left: 1px solid var(--transbutborder);
+.forum:hover {
+  box-shadow: 0px 0px 4px 4px rgba(255, 255, 255, 0.2),
+    0px 0px 4px 4px rgba(255, 255, 255, 0.19);
 }
 
-.navbar .logo {
-  display: table;
-  float: left;
-  font-size: 2.2em;
-  padding: 0px 10px;
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  top: 13px;
+  right: 15px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 30px;
+  height: 2px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+.games {
+  color: white;
   text-decoration: none;
+  font-size: 20px;
+  line-height: 30px;
 }
 
-
-.c-box {
-    font-family: 'Noto Sans JP', sans-serif;
-    position: relative;
-    top:65px;
-    border-top: var(--main-color) 3px solid;
-    border-bottom: var(--main-color) 3px solid;
-    border-left: var(--main-color) 3px solid;
-    border-right: var(--main-color) 3px solid;
-    background: rgba(240,255,240,0);
-    -webkit-box-shadow: 1px 2px 3px #000;
-    -moz-box-shadow: 1px 2px 3px #111;
-    box-shadow: 1px 2px 3px #1d1d1d;
-    -webkit-border-radius: .9em;
-    -moz-border-radius: .9em;
-    border-radius: .9em;
-    overflow:hidden;
-
-}
-
-.c-box h1 {
-    margin: 0 0 12px 0;
-    padding: 12px 0;
-    font-size: 24px;
-    color: #ffffff;
-    border-bottom: 2px dotted #ffffff;
-}
-
-.c-box p {
-    margin: 0 0 12px 0;
-    line-height: 1.5em;
-    font-size: 15px;
-    color: #ffffff;
-}
-
-.c-box span {
-    font-weight: bold;
-}
-
-.c-box a {color:white;}
-
-.d-box {
-    font-family: 'Noto Sans JP', sans-serif;
-    position: relative;
-    padding: 20px 40px;
-    margin-top:63px;
-    background: rgba(240,255,240,0);
-    border-top: var(--main-color) 3px solid;
-    border-bottom: var(--main-color) 3px solid;
-    border-left: var(--main-color) 3px solid;
-    border-right: var(--main-color) 3px solid;
-    -webkit-box-shadow: 1px 2px 3px #000;
-    -moz-box-shadow: 1px 2px 3px #111;
-    box-shadow: 1px 2px 3px #1d1d1d;
-    -webkit-border-radius: .9em;
-    -moz-border-radius: .9em;
-    border-radius: .9em;
-}
-
-.d-box h1 {
-    margin: 0 0 12px 0;
-    padding: 12px 0;
-    font-size: 24px;
-    color: #ffffff;
-    border-bottom: 2px dotted #ffffff;
-}
-
-.d-box p {
-    margin: 0 0 12px 0;
-    line-height: 1.5em;
-    font-size: 15px;
-    color: #ffffff;
-}
-
-.d-box span {
-    font-weight: bold;
-}
-
-
-
-
-cctb {
-    display: inline-block;
-    border-radius: 10px;
-    min-width: 65px;
-    color:white;
-    border: 1px solid var(--borders);
-    text-align: center;
-    font-family: 'Noto Sans JP', sans-serif;
-    background-color: var(--main-color);
-    text-rendering: optimizeLegibility;
-}
-
-
-.selbuttons {border:none;border-radius: 5px;padding:10px;width:48px;background:var(--main-color);color:#fff;font-weight:bold;}
-.selbuttonsbigger {border:none;border-radius: 5px;padding:10px;width:55px;background:var(--main-color);;color:#fff;font-weight:bold;}
-.selbuttonsbigger:hover {background:var(--hoverbuttoncolor);}
-
-
-.tabcontent {
-  animation: fadeEffect 1s; /* Fading effect takes 1 second */
-}
-
-/* Go from zero to full opacity */
-@keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-/* Style the tab */
-
-
-/* Style the buttons that are used to open the tab content */
-.tab button {
- background-color: inherit;
- float: left;
- border: none;
- outline: none;
- cursor: pointer;
- padding: 14px 16px;
- transition: 0.3s;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
- background-color: #ddd;
-}
-
-
-
-/* Style the tab content */
-.tabcontent {
- display: none;
- padding: 6px 12px;
- border-top: none;
+.games:hover {
+  color: rgb(11, 228, 243);
 }
