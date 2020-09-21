@@ -9,3 +9,4 @@ I am constantly trying to make my site better, so expect new commits!
 
 ## Credits:
 TitaniumNetwork - for developing these amazing proxies!
+VantaJS - for the super-cool background!
