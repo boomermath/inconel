@@ -14,6 +14,7 @@ body {
   color: white;
   z-index: 0;
   transition: 0.3s;
+  overflow-x: hidden;
 }
 
 .homesplash {
