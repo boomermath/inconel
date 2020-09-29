@@ -1,11 +1,15 @@
 function coolmath() {
-    var yeet = document.getElementById("url").value;   
-  var uhoh = yeet.includes("coolmathgames.com");
-   var noni = yeet.includes("http://");
-  var trol = yeet.includes("https://");
-  var yai = yeet + "/play";
-  var yaiy = "https://" + yai
-  if (uhoh !== true) {alert("That's not a coolmath game link!");}
-  else if (noni || trol) {window.open(yai);}
-  else {window.open(yaiy);}}
-     
+  var link = document.getElementById("url").value;
+  var check = link.includes("coolmathgames.com");
+  var http = link.includes("http://");
+  var https = link.includes("https://");
+  var hack = link + "/play";
+  var nohttp = "https://" + hack;
+  if (check !== true) {
+    alert("That's not a coolmath game link!");
+  } else if (http || https) {
+    window.open(hack);
+  } else {
+    window.open(nohttp);
+  }
+}
