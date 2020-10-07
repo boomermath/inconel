@@ -112,14 +112,14 @@ document.getElementById("al").onclick = function al() {
   var y = url.includes("http://");
   if (n) {
     var finalUrl = window.btoa(url);
-    var jjui = "https://" + domainAL + "/fetch/" + finalUrl;
+    var jjui = "https://" + domainAL + "/proxy/" + finalUrl;
   } else if (y) {
     var finalUrl = window.btoa(url);
-    var jjui = "https://" + domainAL + "/fetch/" + finalUrl;
+    var jjui = "https://" + domainAL + "/proxy/" + finalUrl;
   } else {
     url = "http://" + url;
     var finalUrl = window.btoa(url);
-    var jjui = "https://" + domainAL + "/fetch/" + finalUrl;
+    var jjui = "https://" + domainAL + "/proxy/" + finalUrl;
   }
   document.write(
     '<iframe allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true" id="forumframe" src="' +
