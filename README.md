@@ -15,3 +15,6 @@ This is just a frontend! The proxies are externally hosted! If you want to attac
 TitaniumNetwork - for developing these amazing proxies!
 
 VantaJS - for the super-cool background!
+
+Simon Cheng - The guy who made CNN proxy (I use his website for my proxy)
+^ Github: https://github.com/binary-person
