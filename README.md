@@ -9,7 +9,7 @@ I am constantly trying to make my site better, so expect new commits!
 
 
 ## For ppl who fork this:
-This is just a frontend! The proxies are externally hosted! If you want to attach your own proxies (instead of mooching off of mine) go to js/surf.js and change the domain variables.
+This is just a frontend! The proxies are externally hosted! You have to attach your own proxies (or use my site https://inconel.ml) in js/surf.js (domain variables).
 
 ## Credits:
 TitaniumNetwork - for developing these amazing proxies!
