@@ -8,7 +8,7 @@ var domainCNN = "thecnnpower.tk";
 var domainAL = "nodejsnewpro.herokuapp.com";
 var tabUS = "https://yewtu.be/feed/trending";
 
-//Check if its a valid url, if not, forward it as a search query to google.
+// Check if its a valid url, if not, forward it as a search query to google.
 function is_url(str) {
   regexp = /^(?:(?:https?|ftp):\/\/)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)(?:\.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*(?:\.(?:[a-z\u00a1-\uffff]{2,})))(?::\d{2,5})?(?:\/\S*)?$/;
   if (regexp.test(str)) {
@@ -31,10 +31,10 @@ function is_url(str) {
 
 var url = window.location.hostname;
 
-//Pygo button
+// Pygo button
 document.getElementById("pygo").onclick = function pygo() {
   var url = $("url").value;
-  //this is the URL for the server
+  // this is the URL for the server
   is_url(url);
   var n = url.includes("https://");
   var y = url.includes("http://");
@@ -52,10 +52,10 @@ document.getElementById("pygo").onclick = function pygo() {
   return false;
 };
 
-//PHP button
+// PHP button
 document.getElementById("php").onclick = function php() {
   var url = $("url").value;
-  //this is the URL for the server
+  // this is the URL for the server
   is_url(url);
   var n = url.includes("https://");
   var y = url.includes("http://");
@@ -76,13 +76,13 @@ document.getElementById("php").onclick = function php() {
   return false;
 };
 
-//CNN button
+// CNN button
 document.getElementById("cnn").onclick = function cnn() {
   var url = $("url").value;
-  //this is the URL for the server
+  // this is the URL for the server
   is_url(url);
-  var urlSUB1 = url.replace("-", "_-");
-  var urlSUB = urlSUB1.replace(".", "--");
+  var urlSUB1 = url.replaceAll("-", "_-");
+  var urlSUB = urlSUB1.replaceAll(".", "--");
   var nerd2 = urlSUB.replace("https://", "");
   var nerd1 = urlSUB.replace("http://", "");
   var n = url.includes("https://");
@@ -103,10 +103,10 @@ document.getElementById("cnn").onclick = function cnn() {
   return false;
 };
 
-//AL button
+// AL button
 document.getElementById("al").onclick = function al() {
   var url = $("url").value;
-  //this is the URL for the server
+  // this is the URL for the server
   is_url(url);
   var n = url.includes("https://");
   var y = url.includes("http://");
