@@ -2,10 +2,10 @@ function $(id) {
   return document.getElementById(id);
 }
 
-var domainPY = "pythonstuffs.herokuapp.com";
-var domainPHP = "boomermathphp.000webhostapp.com";
-var domainCNN = "thecnnpower.tk";
-var domainAL = "nodejsnewpro.herokuapp.com";
+var domainPY = "";
+var domainPHP = "";
+var domainCNN = "";
+var domainAL = "";
 var tabUS = "https://yewtu.be/feed/trending";
 
 // Check if its a valid url, if not, forward it as a search query to google.
