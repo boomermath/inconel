@@ -83,8 +83,8 @@ document.getElementById("cnn").onclick = function cnn() {
   is_url(url);
   var urlSUB1 = url.replaceAll("-", "_-");
   var urlSUB = urlSUB1.replaceAll(".", "--");
-  var nerd2 = urlSUB.replaceAll("https://", "");
-  var nerd1 = urlSUB.replaceAll("http://", "");
+  var nerd2 = urlSUB.replace("https://", "");
+  var nerd1 = urlSUB.replace("http://", "");
   var n = url.includes("https://");
   var y = url.includes("http://");
   if (n) {
