@@ -81,10 +81,10 @@ document.getElementById("cnn").onclick = function cnn() {
   var url = $("url").value;
   //this is the URL for the server
   is_url(url);
-  var urlSUB1 = url.replace("-", "_-");
-  var urlSUB = urlSUB1.replace(".", "--");
-  var nerd2 = urlSUB.replace("https://", "");
-  var nerd1 = urlSUB.replace("http://", "");
+  var urlSUB1 = url.replaceAll("-", "_-");
+  var urlSUB = urlSUB1.replaceAll(".", "--");
+  var nerd2 = urlSUB.replaceAll("https://", "");
+  var nerd1 = urlSUB.replaceAll("http://", "");
   var n = url.includes("https://");
   var y = url.includes("http://");
   if (n) {
