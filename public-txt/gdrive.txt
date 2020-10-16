@@ -9,7 +9,7 @@ Setup: Create a bookmark, copy the provided code and paste it in as the URL (nam
 javascript:(function() {
 var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
 link.type = 'image/x-icon';link.rel = 'shortcut icon';
-link.href = 'https://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico';
+link.href = 'https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png';
 document.title = 'My Drive - Google Drive';
 console.log(document.title);
 document.getElementsByTagName('head')[0].appendChild(link);})();
@@ -22,7 +22,7 @@ javascript:function gcloak() {
 var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
 link.type = 'image/x-icon';
 link.rel = 'shortcut icon';
-link.href = 'https://ssl.gstatic.com/docs/doclist/images/infinite_arrow_favicon_5.ico';
+link.href = 'https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png';
 document.title = 'My Drive - Google Drive';
 console.log(document.title);
 document.getElementsByTagName('head')[0].appendChild(link) };
