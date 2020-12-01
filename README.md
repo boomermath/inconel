@@ -1,4 +1,4 @@
-# Boomermath.gq
+# Inconel.ml
 A stylish and sleek proxy website made using TitaniumNetwork's proxies!
 
 ## Deployment:
@@ -9,6 +9,13 @@ I am constantly trying to make my site better, so expect new commits!
 
 ## For ppl who fork this:
 This is just a frontend! The proxies are externally hosted! You have to attach your own proxies (or use my site https://inconel.ml) in js/surf.js (domain variables).
+
+```javascript
+var domainPY = ""; //Pydodge
+var domainPHP = ""; //PHP proxy
+var domainCNN = ""; //CNN proxy
+var domainAL = ""; //Alloy proxy
+```
 
 ## Chat/Forum
 Go to forumpages, and if you want to hook up your own chat or forum, change the iframe source.
