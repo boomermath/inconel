@@ -54,12 +54,10 @@ document.getElementById("cnn").onclick = function cnn() {
   var url = document.getElementById("url").value;
   if (is_url(url)) return;
   if (url.substr(0, 4) === "http") url = url.replace(/(^http:\/\/)|(^https:\/\/)/g, '');
-  alert(url)
   url = url.split('/');
   url[0] = url[0].replace(/\-/g, '_-').replace(/\./g, '--');
-  let append = url.slice(1).join('/')
+  var append = url.slice(1).join('/')
   var formattedURL = `https://s--${url[0]}.${domainCNN}/${append ? append : ''}`
-  alert(formattedURL)
   iframe(formattedURL);
 };
 
