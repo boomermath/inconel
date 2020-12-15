@@ -4,7 +4,7 @@ var domainCNN = "thecnnpower.tk";
 var domainAL = ["manynode.herokuapp.com", "proxy"];
 var tabUS = "https://yewtu.be/feed/trending";
 
-//Take the inputted url and make it an iframe.
+//Take the inputted url and make it an iframe for proxying!
 function iframe(url) { return document.write('<iframe allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true" id="proxyframe" src="' + url + '"  style="position:fixed; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:9;"seamless>'); }
 
 // Check if its a valid url, if not, forward it as a search query to google.
