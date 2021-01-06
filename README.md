@@ -61,4 +61,4 @@ VantaJS - for the super-cool background!
 
 Simon Cheng - The guy who made CNN proxy (I use his website for my proxy)
 
-Github: https://github.com/binary-person
+His Github: https://github.com/binary-person
