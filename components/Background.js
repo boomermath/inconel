@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import * as THREE from "three";
 import FOG from "vanta/dist/vanta.fog.min";
 import { useDarkMode, useWindowSize } from "./Hooks";
@@ -19,7 +19,7 @@ export default function Background({ children }) {
     const vantaRef = useRef();
 
     /* eslint-disable react-hooks/exhaustive-deps */
-    useEffect(() => {
+    useLayoutEffect(() => {
         const isDark = mode === "dark";
 
         if (vantaEffect) {
