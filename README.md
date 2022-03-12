@@ -12,4 +12,6 @@ Go to [surf.js](https://github.com/boomermath/InconelNext/blob/master/pages/surf
 router.push(`/browse/${browse.toString()}`);
 ```
 
-then `npm run build` and `npm start` and you're good to go!
+Optionally, `window.location.href` can be changed to link to another website's proxy, such as [Ultraviolet](https://github.com/titaniumnetwork-dev/ultraviolet-site)
+
+Commands: `npm run build` and `npm start` and you're good to go!
