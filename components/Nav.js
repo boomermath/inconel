@@ -3,8 +3,8 @@ import SettingsSvg from "./SettingsSvg";
 
 function Link({ href, children }) {
     return (
-        <NextLink href={href}>
-            <a className="text-xl float-left transform duration-300 border-b-2 border-transparent hover:border-brown dark:hover:border-gray-200 hover:-translate-y-1 hover:scale-125">{children}</a>
+        <NextLink href={href} className="text-xl float-left transform duration-300 border-b-2 border-transparent hover:border-brown dark:hover:border-gray-200 hover:-translate-y-1 hover:scale-125">
+            {children}
         </NextLink>
     )
 }

@@ -8,7 +8,7 @@ export default class Inconel extends Document {
                 <Head>
                     <link rel="icon" href="/img/googleDrive.ico" />
                     <link rel="preconnect" href="https://fonts.googleapis.com" />
-                    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+                    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
                     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet" />
                 </Head>
                 <body>
