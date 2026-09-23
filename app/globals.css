@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f6f3ee;
+  --color-ink: #1c1917;
+  --color-graphite: #161513;
+  --color-copper: #c4622d;
+  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  @apply antialiased;
+}
+
+body {
+  @apply bg-paper text-ink dark:bg-graphite dark:text-paper font-sans;
+}
+
+.input {
+  @apply w-full bg-white dark:bg-ink/40 text-ink dark:text-paper outline-none border-2 border-ink/15 dark:border-paper/20 rounded-md px-3 py-2 transition-colors hover:border-copper/60 focus:border-copper focus:ring-2 focus:ring-copper/20;
+}
+
+.button {
+  @apply bg-copper text-paper hover:bg-ink dark:hover:bg-paper dark:hover:text-ink transition-colors rounded-md px-4 py-2 font-medium;
+}
