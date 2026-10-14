@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 
+const HAMMERHEAD_SESSION_URL = process.env.NEXT_PUBLIC_PROXY_URL;
+
 export default function Surf() {
   const [url, setURL] = useState("");
 
@@ -16,9 +18,9 @@ export default function Surf() {
       return alert(url.length ? "Invalid url!" : "Enter a url!");
     }
 
-    e.target.reset();
-    setURL("");
-    window.location.href = `https://www.nebulaofficial.gq/proxy/${btoa(browse.toString())}`;
+    const form = e.currentTarget;
+    form.elements.url.value = browse;
+    form.submit();
   };
 
   return (
@@ -33,9 +35,12 @@ export default function Surf() {
       </header>
 
       <form
+        action={HAMMERHEAD_SESSION_URL}
+        method="POST"
         className="rounded-xl border-2 border-ink/15 dark:border-paper/20 bg-white/50 dark:bg-ink/30 p-4 sm:p-6"
         onSubmit={handle}
       >
+        <input type="hidden" name="url" />
         <div className="flex flex-col sm:flex-row gap-3">
           <input
             className="input"
